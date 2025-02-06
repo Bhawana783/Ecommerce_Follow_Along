@@ -1,3 +1,14 @@
+
 node_modules/
 
 package-lock.json
+=======
+#Node Modules
+node_modules/
+
+#logs
+logs/
+
+# Environmental variables
+.env
+
