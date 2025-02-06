@@ -41,3 +41,14 @@ Additional Concepts:
 Utils: This refers to utility functions that provide helpful, reusable code for common tasks, like formatting dates or parsing data.
 Middlewares: As mentioned, they act as intermediaries between the incoming request and the route handler. They're useful for tasks like checking if the user is logged in or validating inputs.
 The structure helps you build clean, modular, and reusable code, which makes development smoother as your application grows. The concepts of routes, controllers, models, and middleware will become clearer as you implement them in your project.
+
+# Milestone 5: Creating the Signup Page
+
+## Overview
+In this milestone, I focused on building the sign-up page for users to register. The page includes fields for the user’s full name, email, and password. After users fill out the form, their inputs are validated to ensure they meet the required criteria before submission.
+
+## Key Features
+- **Sign-Up Form**: A user-friendly sign-up form with fields for the name, email, and password.
+- **Form Validation**: Input validation for name, email format, and password strength (minimum 6 characters).
+- **Responsive Design**: The page is designed to be responsive and user-friendly on both desktop and mobile devices.
+
