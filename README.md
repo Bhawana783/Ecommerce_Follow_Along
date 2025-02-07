@@ -52,3 +52,68 @@ In this milestone, I focused on building the sign-up page for users to register.
 - **Form Validation**: Input validation for name, email format, and password strength (minimum 6 characters).
 - **Responsive Design**: The page is designed to be responsive and user-friendly on both desktop and mobile devices.
 
+
+
+## Milestone 6 - Secure User Data and Password Encryption
+
+In this milestone, the focus was on securely handling user data during the signup process. The key objectives and achievements are as follows:
+
+### What Was Achieved
+
+1. **Password Encryption:**
+   - Implemented password hashing using the `bcrypt` library to ensure user passwords are stored securely.
+   - Passwords are now encrypted before being stored in the database, making it nearly impossible for attackers to retrieve them, even if they gain access to the database.
+
+2. **User Data Storage:**
+   - Created a secure backend endpoint for the signup process, where user details (such as name, email, and password) are stored in the database.
+   - Only the encrypted password is stored, ensuring user privacy is maintained.
+
+3. **Database Integration:**
+   - Integrated the backend with the database to store user data securely, and ensured that the data is validated before storing.
+   - Utilized encryption techniques to comply with security standards and ensure user privacy.
+
+### Key Security Considerations
+- **Encryption:** Passwords are encrypted using `bcrypt` before being saved to the database. This makes passwords unreadable and adds a layer of security.
+- **Privacy Protection:** The system is designed to prevent sensitive information like passwords from being exposed or stored in plain text.
+- **Compliance:** The encryption strategy ensures that we follow best practices for data security and compliance with relevant standards.
+
+The application is now more secure, with encrypted passwords stored in the database, protecting user information from unauthorized access.
+
+
+## Milestone 4 - User Model, User Controller, and File Uploads
+
+In this milestone, we made significant progress by adding user data management and enabling file uploads to the application. Here's a summary of what was achieved:
+
+### What Was Achieved
+
+1. **User Model Creation:**
+   - Created a **User Model** to define how user data is structured in the database.
+   - The User Model uses a **Schema** to define fields such as `name`, `email`, `password`, and additional fields like `profilePicture` to store user information.
+   - This model helps ensure consistency and structure when saving and retrieving user data.
+
+2. **User Controller:**
+   - Developed a **User Controller** to handle various user-related actions.
+   - The controller includes functions for user registration, authentication, and retrieving user data.
+   - It also manages the logic related to user data validation, encryption of passwords, and handling any business logic before saving or retrieving user data from the database.
+
+3. **File Uploads with Multer:**
+   - Configured **Multer** to handle file uploads within the application.
+   - Enabled users to upload files such as profile pictures, which are then stored on the server.
+   - Multer helps manage file storage, validation, and handles the security concerns related to file uploads (such as limiting file size and type).
+
+### Key Features Added
+- **User Data Model:** With the use of Mongoose Schema, we defined and structured user data for seamless storage and retrieval.
+- **User Controller Functions:** Ensured that actions like user registration and profile data retrieval are efficiently handled by the server.
+- **File Uploading System:** Enabled users to upload files, store them securely on the server, and associate them with user profiles.
+
+### Security Considerations:
+- **File Validation:** Multer's file filter ensures that only valid file types (e.g., images) are uploaded, preventing potential malicious files from being stored on the server.
+- **Password Encryption:** As part of the User Model, we ensure that passwords are hashed and encrypted before being stored in the database.
+
+This milestone sets up foundational features such as managing user data and handling file uploads, which are crucial for developing a fully functional user management system.
+
+---
+
+### Next Steps
+In the upcoming milestones, we will continue to build on this foundation, adding more features to enhance the application, such as user authentication and profile management.
+
