@@ -1,27 +1,26 @@
 const express = require('express');
-const connectDB = require('./src/Database/db')
-const app  = express();
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+const authRoutes = require('./routes/authRoutes');
 
-require('dotenv').config({
-    path:'./src/config/.env'
+// Initialize dotenv for environment variables
+dotenv.config();
+
+const app = express();
+
+// Middleware for parsing JSON data
+app.use(express.json());
+
+// Use the login route
+app.use('/api/auth', authRoutes);
+
+// Connect to the database
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Database connected'))
+  .catch((err) => console.log('Database connection failed', err));
+
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
-
-const PORT = process.env.port||8080
-
-const url = process.env.db_url
-
-app.use(express.json())
-
-app.get('/',(req,res)=>{
-    res.send("This is Home Route")
-})
-app.listen(PORT,async()=>{
-    try{
-        await connectDB(url);
-        console.log(`Server is running on port ${PORT}`)
-        console.log('Database connected successfully')
-    }
-    catch(err){
-        console.log(err)
-    }
-})
