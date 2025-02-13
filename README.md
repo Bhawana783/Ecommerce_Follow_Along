@@ -117,3 +117,18 @@ This milestone sets up foundational features such as managing user data and hand
 ### Next Steps
 In the upcoming milestones, we will continue to build on this foundation, adding more features to enhance the application, such as user authentication and profile management.
 
+## Milestone 7 - User Login Implementation
+
+### What was achieved in Milestone 7:
+- Implemented a user login functionality with password validation using `bcryptjs`.
+- Passwords are securely hashed and compared with the stored hashes in the database.
+- Implemented a `login` route that accepts user credentials (email & password), verifies the user, and issues a JSON Web Token (JWT) for successful authentication.
+- The login functionality is available via the `POST /api/auth/login` endpoint.
+
+### Key Features:
+- **Password Hashing:** Passwords are hashed using `bcryptjs` before saving to the database.
+- **Token Generation:** Upon successful login, the server returns a JWT token for authenticated users.
+- **User Verification:** Ensures that the user exists and that the entered password matches the hashed password in the database.
+
+
+

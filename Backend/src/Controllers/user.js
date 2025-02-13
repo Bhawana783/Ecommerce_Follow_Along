@@ -1,24 +1,31 @@
-const {Router}= require("express");
-const userModel = require("../Model/userModel");
+const User = require('../models/user');
+const jwt = require('jsonwebtoken');
 
-const router = Router();
+// Login controller
+const login = async (req, res) => {
+  const { email, password } = req.body;
 
+  try {
+    // Check if user exists
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(400).json({ message: 'User does not exist' });
+    }
 
-router.post("/create-user",upload.single("file"), async(req,res)=>{
-    const {name, email, password} = req.body;
-    const userEmail = await userModel.findOne({email});
-    if (userEmail) {
-        return next(new ErrorHandler("User already exists", 400));
-      }
-const filename = req.file.filename ;
-const fileUrl = path.join(filename);
-const user={
-    name:name,
-    email:email,
-    password:password,
-    avatar: fileUrl,
-} ;
-console.log(user);
-});
+    // Compare entered password with hashed password in DB
+    const isMatch = await user.matchPassword(password);
+    if (!isMatch) {
+      return res.status(400).json({ message: 'Invalid credentials' });
+    }
 
-module.exports = router;
+    // Create and send a JWT token
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    res.json({ token, message: 'Login successful' });
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server error' });
+  }
+};
+
+module.exports = { login };
