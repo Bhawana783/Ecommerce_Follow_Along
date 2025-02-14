@@ -1,62 +1,74 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f9;
-  }
-  
-  .signup-container {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin-bottom: 0.5rem;
-  }
-  
-  input {
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  button {
-    padding: 0.8rem;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  p {
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  a {
-    color: #4CAF50;
-    text-decoration: none;
-  }
-  
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Align items at the top of the page */
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+/* Signup Form Styles */
+.signup-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.8rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+/* Homepage Layout (For displaying product cards) */
+.home-container {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2
+}

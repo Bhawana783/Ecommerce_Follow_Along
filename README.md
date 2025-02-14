@@ -130,5 +130,13 @@ In the upcoming milestones, we will continue to build on this foundation, adding
 - **Token Generation:** Upon successful login, the server returns a JWT token for authenticated users.
 - **User Verification:** Ensures that the user exists and that the entered password matches the hashed password in the database.
 
+## Milestone 8 - What Was Achieved in This Milestone
+
+In this milestone, I created a reusable product card component and displayed it dynamically on the homepage. Here are the key accomplishments:
+
+- Created a `ProductCard` component that accepts `name`, `image`, and `price` as props.
+- Used `map()` to iterate over a list of products and display each card on the homepage.
+- Styled the card components using CSS to ensure a clean and responsive layout.
+- The homepage now dynamically displays product cards, making it easy to showcase products.
 
 
