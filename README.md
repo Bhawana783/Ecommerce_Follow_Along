@@ -153,4 +153,20 @@ In this milestone, I created a reusable product card component and displayed it 
 ### Next Steps:
 - Implement backend API to save product details in the database.
 - Restrict product uploads to authorized users.
+# Ecommerce-Follow-Along
+
+## Milestone 10: Creating a Product Schema and API Endpoint
+
+### Features Implemented:
+- **Mongoose Schema** for product data.
+- **Validation** to ensure data integrity.
+- **POST API Endpoint** to add products.
+- **MongoDB Connection** for data storage.
+
+### Technologies Used:
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- Postman (for testing)
 
