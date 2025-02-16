@@ -140,3 +140,17 @@ In this milestone, I created a reusable product card component and displayed it 
 - The homepage now dynamically displays product cards, making it easy to showcase products.
 
 
+# Ecommerce-Follow-Along
+
+## Milestone 9 - Product Input Form
+
+### Features Implemented:
+- Created a form to input product details (name, description, price).
+- Added functionality to upload multiple images.
+- Validated input fields.
+- Handled image uploads.
+
+### Next Steps:
+- Implement backend API to save product details in the database.
+- Restrict product uploads to authorized users.
+
