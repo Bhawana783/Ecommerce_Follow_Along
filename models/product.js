@@ -23,6 +23,8 @@ const productSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  category: { type: String, required: true },
+    stock: { type: Number, required: true },
 });
 
 module.exports = mongoose.model("Product", productSchema);
