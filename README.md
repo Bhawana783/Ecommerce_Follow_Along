@@ -184,3 +184,26 @@ Understand how to make API calls from the frontend.
 
 Dynamically display fetched data using a React component.
 
+
+## Milestone 12: My Products Page – Filtering Products by User Email
+## 📌 Overview
+In this milestone, we implemented a My Products page where users can view all the products they have added. This was done by:
+
+Writing an API endpoint to fetch products based on the user's email.
+Retrieving the filtered product data on the frontend.
+Dynamically displaying the products using the previously created Product Card component.
+## 🎯 Learning Outcomes
+By completing this milestone, I learned:
+✅ How to filter data in MongoDB using specific constraints (email).
+✅ How to fetch filtered data from an Express.js API.
+✅ How to dynamically display fetched data on the frontend using React.
+
+## 🔧 Implementation Details
+## Backend
+Created an Express.js API endpoint to fetch products by email.
+Used Mongoose to filter products stored in MongoDB.
+Sent the filtered product data as a response to the frontend.
+## Frontend
+Implemented a function to fetch filtered products from the backend.
+Passed the data to the Product Card component to display it dynamically.
+
