@@ -170,3 +170,17 @@ In this milestone, I created a reusable product card component and displayed it 
 - Mongoose
 - Postman (for testing)
 
+## Milestone 11 - Displaying Products Dynamically
+
+## 🚀 Overview
+
+In this milestone, we made our home page dynamic by fetching product data from MongoDB and displaying it using a React component. We created an API endpoint to retrieve all stored products and used it to display the products on the fronten🎯 Learning Goals
+
+By completing this milestone, you will:
+
+Learn how to write an API endpoint to fetch product data from MongoDB.
+
+Understand how to make API calls from the frontend.
+
+Dynamically display fetched data using a React component.
+

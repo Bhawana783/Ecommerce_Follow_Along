@@ -1,41 +1,33 @@
-// src/pages/Home.js
-import React from 'react';
-import ProductCard from './components/ProductCard';
+import React, { useEffect, useState } from 'react';
+import ProductCard from '../components/ProductCard';
 
 const Home = () => {
-  // Sample product data
-  const products = [
-    {
-      name: 'Product 1',
-      image: 'https://via.placeholder.com/150',
-      price: 29.99,
-    },
-    {
-      name: 'Product 2',
-      image: 'https://via.placeholder.com/150',
-      price: 49.99,
-    },
-    {
-      name: 'Product 3',
-      image: 'https://via.placeholder.com/150',
-      price: 19.99,
-    },
-    // You can add more products as needed
-  ];
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:9090/api/products')
+      .then((response) => response.json())
+      .then((data) => setProducts(data))
+      .catch((error) => console.error('Error fetching products:', error));
+  }, []);
 
   return (
     <div className="home-container">
       <h1>Welcome to Our Store</h1>
       <div className="product-grid">
-        {/* Map over the products array to create a card for each product */}
-        {products.map((product, index) => (
-          <ProductCard
-            key={index}
-            name={product.name}
-            image={product.image}
-            price={product.price}
-          />
-        ))}
+        {/* Map over the fetched products array to create a card for each product */}
+        {products.length > 0 ? (
+          products.map((product) => (
+            <ProductCard
+              key={product._id}
+              name={product.name}
+              image={product.image}
+              price={product.price}
+            />
+          ))
+        ) : (
+          <p>Loading products...</p>
+        )}
       </div>
     </div>
   );
