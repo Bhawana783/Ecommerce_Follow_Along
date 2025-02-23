@@ -207,3 +207,12 @@ Sent the filtered product data as a response to the frontend.
 Implemented a function to fetch filtered products from the backend.
 Passed the data to the Product Card component to display it dynamically.
 
+## Ecommerce Follow-Along - Milestone 13 🚀
+## Milestone 13: Implementing Product Editing Functionality
+## Overview
+In this milestone, we implemented the ability to edit existing products. This includes:
+ Creating an API endpoint to update product details in MongoDB.
+ Adding an Edit button to each product in the frontend.
+ Autofilling the edit form with the product’s existing details.
+ Updating the database when the user modifies and submits the form.
+
