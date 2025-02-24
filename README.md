@@ -216,3 +216,34 @@ In this milestone, we implemented the ability to edit existing products. This in
  Autofilling the edit form with the product’s existing details.
  Updating the database when the user modifies and submits the form.
 
+## Milestone 14: Implementing Product Deletion
+
+## 📌 Overview
+
+In this milestone, we have implemented the functionality to delete a product from MongoDB using its ID. A delete button has been added to each product card, allowing users to remove products dynamically.
+
+## 🚀 What We Did
+
+Created a DELETE API endpoint in the backend to remove a product by its ID from MongoDB.
+
+Updated the frontend by adding a Delete button to each product card.
+
+Implemented the delete request to send the product ID to the backend when the delete button is clicked.
+
+Handled response and UI updates to reflect the deletion in real time.
+
+## 🛠️ Technical Implementation
+
+## Backend:
+
+Created a DELETE route in server.js to handle product deletion.
+
+Used findByIdAndDelete to remove the product from the database.
+
+## Frontend:
+
+Added a Delete button to each product card.
+
+Implemented a function to send a DELETE request with the product ID.
+
+Removed the deleted product from the UI dynamically.
