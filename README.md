@@ -248,6 +248,7 @@ Implemented a function to send a DELETE request with the product ID.
 
 Removed the deleted product from the UI dynamically.
 
+
 ## Milestone 15
 
 ## Features Implemented:
@@ -255,13 +256,17 @@ Removed the deleted product from the UI dynamically.
 - Added navigation links to Home, My Products, Add Product, and Cart.
 - Made the Navbar **responsive** using Tailwind CSS and React Hooks.
 - Integrated Navbar into all pages (`App.jsx`).
-- Used **React Router** for smooth navigation.
+- Used **React Router** for smooth navigation
+
 
 
 # Milestone 16 : In this milestone, we will create an product info page that display all the product data and choose quantity and add to card button.
 Key feautures:
 Created an new page that display all the product data.
 Add quantity and add to card button.
-Summary : We created an ProductDetails page to view the product with desired id, and added a count button with increase(+) and decrease(-) option in it.
+Summary : We created an ProductDetails page to view the product with desired id, and added a count button with increase(+) and decrease(-) option in i
 Tech Stack : React - frontend - src - pages - ProductDetails.jsx 
+
+
+Tech Stack : React - frontend - src - pages - ProductDetails 
 
