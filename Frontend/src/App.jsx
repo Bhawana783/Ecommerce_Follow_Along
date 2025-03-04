@@ -5,11 +5,14 @@ import SignupPage from "./pages/SignupPage";
 import CreateProduct from "./pages/CreateProduct";
 import MyProducts from "./pages/MyProducts";
 import EditProduct from "./pages/EditProduct"; // Corrected Import
+import Nav from "./components/Nav";
+import Cart from "./pages/Cart";
 import "./App.css";
 
 const App = () => {
   return (
     <BrowserRouter>
+    <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginPage />} />

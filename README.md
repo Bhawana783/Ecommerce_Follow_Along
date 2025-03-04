@@ -247,3 +247,12 @@ Added a Delete button to each product card.
 Implemented a function to send a DELETE request with the product ID.
 
 Removed the deleted product from the UI dynamically.
+
+## Milestone 15
+
+## Features Implemented:
+- Created a reusable Navbar component (`Nav.jsx`).
+- Added navigation links to Home, My Products, Add Product, and Cart.
+- Made the Navbar **responsive** using Tailwind CSS and React Hooks.
+- Integrated Navbar into all pages (`App.jsx`).
+- Used **React Router** for smooth navigation.
