@@ -278,6 +278,32 @@ Tech Stack : React - frontend - src - pages - ProductDetails
 - Developed an endpoint to add products to the cart.
 - Tested API using Postman/Bruno.
 
+# 🛒 Milestone 18: Fetch Products from User’s Cart  
 
+## 📌 Overview  
+In this milestone, we implemented a **backend endpoint** to fetch all products inside a user's cart using their **email**. This enables the frontend to dynamically display the cart items on the cart page.
+
+---
+
+## 🚀 Updates in Backend  
+
+### **1️⃣ Created Cart Fetch API in `routes/cart.js`**  
+- Added a **GET** endpoint to retrieve products in the user's cart.
+- Used **Mongoose `populate()`** to include product details.
+
+### **2️⃣ Updated `server.js` to Include Cart Routes**  
+- Integrated the cart routes with `app.use("/api/cart", cartRoutes)`.
+- Ensured proper error handling for API requests.
+
+---
+
+## 🛠️ API Endpoints  
+
+| Method | Endpoint | Description |
+|--------|---------|------------|
+| `POST` | `/api/cart/add-to-cart` | Adds a product to the user's cart. |
+| `GET` | `/api/cart/user/:email` | Fetches all products inside the user's cart. |
+
+---
 
 
