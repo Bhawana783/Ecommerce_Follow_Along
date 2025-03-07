@@ -31,5 +31,28 @@ router.post("/add-to-cart", async (req, res) => {
     res.status(500).json({ message: "Error adding product to cart", error });
   }
 });
+router.get("/user/:email", async (req, res) => {
+    const { email } = req.params;
+  
+    try {
+      // Find user by email
+      const user = await User.findOne({ email });
+  
+      if (!user) {
+        return res.status(404).json({ message: "User not found" });
+      }
+  
+      // Fetch the user's cart and populate product details
+      const cart = await Cart.findOne({ userId: user._id }).populate("products.productId");
+  
+      if (!cart) {
+        return res.status(404).json({ message: "Cart is empty" });
+      }
+  
+      res.status(200).json(cart.products);
+    } catch (error) {
+      res.status(500).json({ message: "Error fetching cart items", error });
+    }
+  });
 
 module.exports = router;
