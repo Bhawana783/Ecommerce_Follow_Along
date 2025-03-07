@@ -270,3 +270,14 @@ Tech Stack : React - frontend - src - pages - ProductDetails.jsx
 
 Tech Stack : React - frontend - src - pages - ProductDetails 
 
+# Ecommerce Project - Milestone 17
+
+## Features Implemented
+- Created a `Cart` schema to store user cart data.
+- Modified `User` schema to include a `cart` field.
+- Developed an endpoint to add products to the cart.
+- Tested API using Postman/Bruno.
+
+
+
+

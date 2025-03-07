@@ -59,6 +59,12 @@ const userSchema = new mongoose.Schema({
   type: Date,
   default: Date.now(),
  },
+ cart: [
+  {
+    productId: { type: mongoose.Schema.Types.ObjectId, ref: "Product" },
+    quantity: { type: Number, default: 1 },
+  },
+],
  resetPasswordToken: String,
  resetPasswordTime: Date,
 });

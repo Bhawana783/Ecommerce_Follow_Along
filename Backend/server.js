@@ -1,5 +1,7 @@
 const app = require("./app");
 const connectDatabase = require("./db/Database");
+const cartRoutes = require("./routes/cart");
+const productModel = require("./model/product");
 
 process.on("uncaughtException", (err) => {
     console.error(`Error: ${err.message}`);
@@ -30,8 +32,6 @@ process.on("unhandledRejection", (err) => {
     });
 });
 
-// Import Product model
-const Product = require("./models/productModel");
 
 // Update Product Endpoint for Milestone 13
 app.put("/api/products/:id", async (req, res) => {
@@ -52,3 +52,4 @@ app.put("/api/products/:id", async (req, res) => {
         res.status(500).json({ message: "Error updating product", error });
     }
 });
+app.use("/api/cart", cartRoutes);
