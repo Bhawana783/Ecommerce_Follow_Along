@@ -8,6 +8,8 @@ import EditProduct from "./pages/EditProduct"; // Corrected Import
 import Nav from "./components/Navbar";
 import Cart from "./pages/cart";
 import "./App.css";
+import ProfilePage from "./ProfilePage";
+import AddressForm from "./AddressForm";
 
 const App = () => {
   return (
@@ -19,7 +21,9 @@ const App = () => {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/create-product" element={<CreateProduct />} />
         <Route path="/myproducts" element={<MyProducts />} />
-        <Route path="/edit-product/:id" element={<EditProduct />} /> {/* Edit Product Route */}
+        <Route path="/edit-product/:id" element={<EditProduct />} /> 
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/add-address" element={<AddressForm />} />
       </Routes>
     </BrowserRouter>
   );

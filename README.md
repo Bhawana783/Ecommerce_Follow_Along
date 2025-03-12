@@ -367,4 +367,29 @@ Database: MongoDB Atlas
 Deployment: GitHub Pages (frontend) & Render (backend)
 
 
+## Milestone21
+
+In this milestone, we created a frontend page to input addresses.
+
+✅ Features Implemented
+
+Address Form Page with the following fields:
+
+Country
+
+City
+
+Address Line 1
+
+Address Line 2
+
+Zip Code
+
+Address Type (Home/Work)
+
+State Management for form data.
+
+Navigation from Profile Page to the Address Form when 'Add Address' is clicked.
+
+
 
