@@ -391,5 +391,26 @@ State Management for form data.
 
 Navigation from Profile Page to the Address Form when 'Add Address' is clicked.
 
+# 🛍️ Ecommerce Project
+
+Welcome to the Ecommerce Project! 🚀  
+This project is a full-stack ecommerce web application with user authentication, product management, cart functionality, and user profile handling.  
+
+---
+
+## 🌟 Milestone 22: Backend Address Endpoint
+
+In this milestone, we built a backend API to **save user addresses** into the database. This ensures users can manage multiple addresses from their profile page.  
+
+---
+
+### 🎯 Learning Goals  
+
+By the end of this milestone, you’ll understand how to:  
+- Create a **backend endpoint** to receive address data from the frontend.  
+- Store the **address** inside the **user profile** collection in **MongoDB**.  
+- Handle API requests, database updates, and error responses properly.  
+
+
 
 
