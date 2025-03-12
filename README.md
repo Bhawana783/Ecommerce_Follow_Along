@@ -304,6 +304,36 @@ In this milestone, we implemented a **backend endpoint** to fetch all products i
 | `POST` | `/api/cart/add-to-cart` | Adds a product to the user's cart. |
 | `GET` | `/api/cart/user/:email` | Fetches all products inside the user's cart. |
 
+## Milestone19
 
+Overview
+In this milestone, we created a cart page UI that displays the products fetched from the backend, and implemented functionality to increase and decrease product quantities using dedicated buttons. We also built new backend endpoints to handle these actions seamlessly.
+
+🔧 Features Implemented
+1️⃣ Frontend Cart Page (Cart.jsx)
+
+Displays cart products fetched from the backend
+Shows product image, name, price, and quantity
+Includes + and - buttons to increase or decrease quantity
+Supports real-time updates on the UI
+2️⃣ Backend Cart Endpoints (cart.js)
+
+GET /api/cart/user/:email - Fetches cart products for the user
+POST /api/cart/increase/:email/:productId - Increases product quantity
+POST /api/cart/decrease/:email/:productId - Decreases product quantity (min 1)
+3️⃣ Error Handling
+
+Handles errors like product not found, empty cart, or invalid user
+Supports both frontend error messages and backend error responses
+🛠️ Code Breakdown
+Frontend - Cart.jsx
+State Management: Manages cart data with useState()
+Effect Hook: useEffect() fetches cart data on page load
+Event Handlers: Handles button clicks for quantity control
+Styling: Responsive design with Tailwind CSS
+Backend - cart.js
+Routes: New routes for fetching cart and updating quantities
+Database Operations: Uses Mongoose to find, update, or modify cart data
+Error Handling: Returns appropriate status codes and messages
 
 
