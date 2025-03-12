@@ -2,6 +2,8 @@ const app = require("./app");
 const connectDatabase = require("./db/Database");
 const cartRoutes = require("./routes/cart");
 const productModel = require("./model/product");
+const userRoutes = require("./routes/user");
+app.use("/api", userRoutes);
 
 process.on("uncaughtException", (err) => {
     console.error(`Error: ${err.message}`);

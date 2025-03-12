@@ -336,4 +336,35 @@ Routes: New routes for fetching cart and updating quantities
 Database Operations: Uses Mongoose to find, update, or modify cart data
 Error Handling: Returns appropriate status codes and messages
 
+## Milestone20
+
+# 🎯 Ecommerce Project - Milestone 20: Profile Page & User Data Endpoint
+🌟 Overview
+
+In this milestone, we created a Profile Page frontend and a backend User Data Endpoint. The profile page dynamically fetches and displays user details, including the profile photo, name, email, and addresses.
+
+🎯 Learning Goals
+By completing this milestone, I have:
+
+Built a backend endpoint to fetch user data by email.
+
+ Created a frontend profile page to display user information.
+
+Displayed profile photo, name, email, and addresses neatly.
+
+Handled missing addresses with a "No address found" message.
+
+Added an "Add Address" button for future functionality.
+
+🛠️ Tech Stack
+
+Frontend: React (Vite), TailwindCSS, Axios
+
+Backend: Express.js, Mongoose, MongoDB
+
+Database: MongoDB Atlas
+
+Deployment: GitHub Pages (frontend) & Render (backend)
+
+
 
