@@ -304,6 +304,6 @@ In this milestone, we implemented a **backend endpoint** to fetch all products i
 | `POST` | `/api/cart/add-to-cart` | Adds a product to the user's cart. |
 | `GET` | `/api/cart/user/:email` | Fetches all products inside the user's cart. |
 
----
+
 
 

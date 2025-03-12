@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage";
-import CreateProduct from "./pages/CreateProduct";
-import MyProducts from "./pages/MyProducts";
+import LoginPage from "./pages/login";
+import SignupPage from "./pages/Signup";
+import CreateProduct from "./pages/createProduct";
+import MyProject from "./pages/myProject";
 import EditProduct from "./pages/EditProduct"; // Corrected Import
-import Nav from "./components/Nav";
-import Cart from "./pages/Cart";
+import Nav from "./components/Navbar";
+import Cart from "./pages/cart";
 import "./App.css";
 
 const App = () => {
