@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
   const userEmail = "testuser@example.com"; // Replace with dynamic user email
-
+  const navigate = useNavigate();
   // Fetch cart items from backend
   useEffect(() => {
     const fetchCartItems = async () => {
@@ -49,6 +50,9 @@ const Cart = () => {
       console.error("Error decreasing quantity:", error);
     }
   };
+  const handlePlaceOrder = () => {
+    navigate("/select-address");
+  };
 
   return (
     <>
@@ -84,6 +88,14 @@ const Cart = () => {
               </div>
             ))}
           </div>
+        )}
+        {cartItems.length > 0 && (
+          <button
+            className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            onClick={handlePlaceOrder}
+          >
+            Place Order 
+          </button>
         )}
       </div>
     </>

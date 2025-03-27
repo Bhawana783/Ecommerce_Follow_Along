@@ -411,6 +411,33 @@ By the end of this milestone, you’ll understand how to:
 - Store the **address** inside the **user profile** collection in **MongoDB**.  
 - Handle API requests, database updates, and error responses properly.  
 
+### Ecommerce Project - Milestone 23
+## Milestone Overview
+In this milestone, we implemented the Place Order functionality by creating a Select Address page in the frontend and defining an Order Schema in the backend.
+
+Learning Outcomes
+By completing this milestone, we:
+   Added a "Place Order" button inside the cart page.
+
+   Created a Select Address page to display all saved addresses and allow users to select one.
+  
+   Wrote a Mongoose schema to store order details in the database.
+  
+   Developed a backend endpoint to fetch all saved addresses for a user.
+
+Implementation Details
+Frontend:
+Created a "Place Order" button inside the cart page.
+
+Navigated to the Select Address page upon clicking the button.
+
+Displayed all saved addresses with an option to select one.
+
+Backend:
+Created an Order Schema to store order details in MongoDB.
+
+Developed an API endpoint to retrieve user addresses from the database.
+
 
 
 
