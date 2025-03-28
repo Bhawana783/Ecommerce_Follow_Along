@@ -438,6 +438,34 @@ Created an Order Schema to store order details in MongoDB.
 
 Developed an API endpoint to retrieve user addresses from the database.
 
+Milestone 24: Order Confirmation Page
+Overview
+In this milestone, we have implemented the Order Confirmation Page, which displays:
+
+All the products being ordered
+
+ The selected delivery address
+
+The total price of the order
+
+A "Place Order" button to finalize the purchase
+
+Features Implemented
+Product Display - Lists all the items in the order.
+
+Delivery Address - Shows the selected address for delivery.
+
+Total Price Calculation - Displays the final amount for the order.
+
+Place Order Button - Allows users to confirm their purchase.
+
+ Tech Stack
+Frontend: React (Vite), Tailwind CSS
+
+Backend: Express.js, MongoDB
+
+Deployment: GitHub Pages (Frontend), Render (Backend)
+
 
 
 
