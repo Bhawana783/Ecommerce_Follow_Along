@@ -438,7 +438,7 @@ Created an Order Schema to store order details in MongoDB.
 
 Developed an API endpoint to retrieve user addresses from the database.
 
-Milestone 24: Order Confirmation Page
+## Milestone 24: Order Confirmation Page
 Overview
 In this milestone, we have implemented the Order Confirmation Page, which displays:
 
@@ -465,6 +465,35 @@ Frontend: React (Vite), Tailwind CSS
 Backend: Express.js, MongoDB
 
 Deployment: GitHub Pages (Frontend), Render (Backend)
+
+## Milestone25
+
+Place Order API Implementation
+Overview
+In this milestone, we implemented a backend endpoint to handle order placement. This API receives product details, user information, and address details, processes the order, and stores it in the MongoDB database.
+
+Features Implemented 
+Created a new backend endpoint to place an order.
+
+Retrieved the _id of the user using their email.
+
+Processed multiple product orders with the same delivery address.
+
+Stored order details in MongoDB using the orders collection.
+
+Backend Implementation 
+
+ Created Order Schema (models/Order.js)
+Defined the structure of the Order collection in MongoDB.
+
+ Created a Place Order Endpoint (routes/orderRoutes.js)
+Accepts products, user email, and address details.
+
+Retrieves user _id using the email.
+
+Creates a separate order entry for each product.
+
+Saves orders in the database.
 
 
 
