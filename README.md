@@ -527,3 +527,60 @@ Returns the orders in the response.
 
 
 
+## Milestone27
+
+### Milestone 27 - My Orders Page
+
+Overview
+
+In this milestone, we focused on creating the frontend page for displaying user orders. This page allows users to view all their orders, which are fetched from the server through a GET request to the my-orders endpoint. The user's email is sent as part of the request to fetch the respective orders.
+
+Learning Goals
+
+By the end of this milestone, the following objectives were achieved:
+
+Created the My Orders page to display user orders.
+
+Sent a GET request to the my-orders endpoint, passing the user’s email to retrieve the relevant orders.
+
+Displayed the fetched orders on the frontend.
+
+Added the My Orders page to the navigation bar for easier access.
+
+
+Steps Followed
+
+Created the My Orders Page:
+
+Designed the layout for the My Orders page that will show all the orders placed by the user.
+
+Fetching Orders:
+
+Sent a GET request to the my-orders API endpoint, including the user's email in the request body.
+
+Retrieved all orders associated with the user.
+
+Displaying Orders:
+
+Displayed the orders in a user-friendly format on the frontend.
+
+Navigation:
+
+Added the My Orders page to the navigation bar for easy access by the user.
+
+Technologies Used
+
+Frontend: HTML, CSS, JavaScript (React or other libraries as applicable)
+
+Backend: Bruno (for managing and validating users), API to handle fetching orders
+
+Database: MySQL (or other DB depending on your project setup)
+
+
+
+Acknowledgments
+Thanks to the Kalvian community for supporting the learning process.
+
+Special thanks to the Bruno framework for handling the backend operations.
+
+
