@@ -656,3 +656,65 @@ This milestone helped me understand how to:
 **How did I like this assignment?**  
 ✅ Very Good – It was practical and helped reinforce full-stack skills!
 
+
+# 💳 Milestone 29 – Integrating Online Payment Gateway (PayPal)
+
+Welcome to Milestone 29 of the E-commerce Follow-Along Project!
+
+---
+
+##  What's New in This Milestone?
+
+In this milestone, I laid the foundation for integrating **PayPal Online Payments** into the order process.
+
+---
+
+##  Features Implemented
+
+### 1. Created PayPal Sandbox Developer Account
+- Set up a developer account on [PayPal Developer Dashboard](https://developer.paypal.com/).
+- Created **sandbox account** and saved:
+  - **User ID**
+  - **Client ID**
+
+### 2. Updated Order Confirmation Page with Payment Options
+- Added **radio buttons** to choose between:
+  - **Cash on Delivery (COD)**
+  - **Online Payment (PayPal)**
+- If **Online Payment** is selected, the placeholder for PayPal buttons is displayed.
+  - *(PayPal button logic to be implemented in Milestone 30)*
+
+---
+
+##  How to Test?
+
+1. Navigate to the **Order Confirmation Page**.
+2. You will see two payment options:
+   - COD
+   - Online Payment
+3. Selecting Online Payment shows a placeholder area for PayPal buttons.
+
+---
+
+##  Folder Structure Affected
+
+- `frontend/pages/OrderConfirmation.jsx` – Updated UI with radio buttons
+- `.env` – (If required) Store the PayPal sandbox Client ID securely
+
+---
+
+
+##  Summary
+
+This milestone helped me understand how to:
+- Set up PayPal Developer credentials
+- Add payment method options in the UI
+- Prepare the app for online payment integration
+
+---
+
+##  Feedback
+
+**How did I like this assignment?**  
+✅ Very Good – It was insightful to explore payment integration!
+
