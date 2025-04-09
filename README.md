@@ -584,3 +584,75 @@ Thanks to the Kalvian community for supporting the learning process.
 Special thanks to the Bruno framework for handling the backend operations.
 
 
+# 🛒 Milestone 28 – Cancel Order Functionality
+
+Welcome to Milestone 28 of the E-commerce Follow-Along Project!
+
+##  What's New in This Milestone?
+
+In this milestone, I implemented **Cancel Order** functionality to allow users to cancel their orders directly from the **My Orders** page.
+
+---
+
+##  Features Implemented
+
+### 1. Cancel Order Button on My Orders Page
+- Each order item now includes a **"Cancel Order"** button.
+- This button is **only visible** for orders that have **not been canceled** yet.
+
+### 2. Backend Endpoint for Canceling an Order
+- A new API endpoint `/cancel-order/:id` (or similar) was created.
+- It:
+  - Receives the `orderId` from the request.
+  - Fetches the order from the database.
+  - Updates its `status` to `"canceled"`.
+  - Saves the updated order back to the database.
+
+### 3. Status Update on Frontend
+- Once an order is canceled:
+  - The UI is updated to reflect the new status.
+  - The **"Cancel Order"** button disappears for that order.
+
+---
+
+##  Tech Stack Used
+
+- **Frontend**: React.js
+- **Backend**: Express.js, Node.js
+- **Database**: MongoDB Atlas
+
+---
+
+##  How to Test?
+
+1. Go to the **My Orders** page.
+2. Find any active (non-canceled) order.
+3. Click the **"Cancel Order"** button.
+4. Confirm that the status updates to "Canceled" and the cancel button disappears.
+5. You can verify backend changes by checking the updated order in the database.
+
+---
+
+##  Folder Structure Affected
+
+- `frontend/pages/MyOrders.jsx` – UI changes to show/hide cancel button
+- `backend/routes/orderRoutes.js` – New endpoint to cancel order
+- `backend/controllers/orderController.js` – Logic to update order status
+
+---
+
+
+##  Summary
+
+This milestone helped me understand how to:
+- Update records in MongoDB.
+- Create dynamic buttons based on order status.
+- Manage UI reactivity based on backend changes.
+
+---
+
+##  Feedback
+
+**How did I like this assignment?**  
+✅ Very Good – It was practical and helped reinforce full-stack skills!
+
