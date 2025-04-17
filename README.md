@@ -718,3 +718,22 @@ This milestone helped me understand how to:
 **How did I like this assignment?**  
 ✅ Very Good – It was insightful to explore payment integration!
 
+## Milestone 30 - PayPal Payment Integration
+
+In this milestone, we implemented an online payment system using the PayPal API and `@paypal/react-paypal-js` library. We created a sandbox account, obtained the client ID, and integrated PayPal buttons that support credit/debit card payments.
+
+### Features:
+- PayPalScriptProvider wraps the app to load PayPal SDK.
+- PayPalButtons renders the payment UI.
+- Transaction alert displays payer's name on successful payment.
+
+## Milestone 31 - Global State Management with Redux
+
+In this milestone, we implemented Redux for managing global state. We created a `store` with a `userReducer` to manage the user's email state. The email can now be accessed from anywhere in the app using the global state.
+
+Key files:
+- `store/store.js`: Configures the Redux store with the user reducer.
+- `store/userActions.js`: Contains action to set email.
+- `main.jsx`: Wrapped the app with `<Provider>` to make the Redux store available globally.
+
+
