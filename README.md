@@ -737,3 +737,35 @@ Key files:
 - `main.jsx`: Wrapped the app with `<Provider>` to make the Redux store available globally.
 
 
+ ## Milestone 32: Order Confirmation and Payment Integration
+✅ What's Implemented
+PayPal Payment Integration
+Integrated PayPal into the checkout process using the @paypal/react-paypal-js library.
+
+Order Confirmation Page
+After successful payment, users are redirected to the Order Confirmation page showing:
+
+Payment success message
+
+Order summary (products, quantity, total amount)
+
+Delivery address
+
+Secure Backend Communication
+Ensured PayPal client ID is securely passed to the frontend from the backend environment.
+
+🔧 Key Features
+Dynamic PayPal button renders based on the order total
+
+Handles successful payment using PayPal's API
+
+Automatically stores payment and order info after transaction
+
+Displays a clean and responsive order confirmation UI
+
+🧪 Testing
+Verified successful and cancelled payments using PayPal sandbox
+
+Confirmed correct order details post-payment
+
+Tested on both desktop and mobile browsers

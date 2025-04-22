@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import AddressCard from "../components/auth/AddressCard";
-import Nav from "../components/auth/nav";
-import { useSelector } from "react-redux"; // Import useSelector
+import Nav from "../components/auth/Nav"
+import { useSelector } from 'react-redux';
 
 export default function Profile() {
 	// Retrieve email from Redux state
