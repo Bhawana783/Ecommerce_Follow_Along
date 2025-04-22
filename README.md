@@ -782,3 +782,15 @@ The importance of setting token expiration with maxAge.
 
 How cookies help persist authentication data on the client side.
 
+### Milestone 34: Validating JWT from Cookies
+
+In this milestone, I implemented secure user session validation using JWT tokens stored in browser cookies.
+
+✅ Extracted token from cookies  
+✅ Created a middleware to verify the token using `jsonwebtoken`  
+✅ Protected backend routes by allowing only logged-in users  
+✅ Tested it by accessing a protected dashboard route
+
+This ensures that users cannot access private routes without logging in, improving app security.
+
+

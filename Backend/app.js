@@ -30,4 +30,7 @@ app.use("/api/v2/orders", orders);``
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/products', express.static(path.join(__dirname, 'products')));
 app.use(ErrorHandler);
+
+const protectedRoute = require("./routes/protected");
+app.use("/api", protectedRoute);
 module.exports= app;
