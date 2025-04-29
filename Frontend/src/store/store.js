@@ -1,6 +1,5 @@
 // store.js
 import { configureStore } from '@reduxjs/toolkit';
-import userReducer from './userSlice';
 
 // 1. Define initial state for user
 const initialUserState = {

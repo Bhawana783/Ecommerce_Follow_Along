@@ -793,4 +793,15 @@ In this milestone, I implemented secure user session validation using JWT tokens
 
 This ensures that users cannot access private routes without logging in, improving app security.
 
+### Milestone 35: Final Deployment
+
+✅ Deployed the **backend** to Render:  
+🔗 https://ecommerce-api.onrender.com
+
+✅ Replaced all localhost URLs in frontend with the deployed backend URL
+
+✅ Deployed the **frontend** to GitHub Pages:  
+🔗 https://bhawana783.github.io/Ecommerce_Follow_Along/
+
+Now the complete full-stack Ecommerce website is LIVE and working!
 
